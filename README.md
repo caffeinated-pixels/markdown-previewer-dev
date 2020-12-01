@@ -4,9 +4,7 @@ A React-based app for the [Build a Markdown Previewer](https://www.freecodecamp.
 
 ## Set up
 
-I wanted to write a React app using Atom with Git version control, but also needed to submit it on freeCodeCamp through CodePen. So, I've set it up with CDNs script tags rather than using the Create-React-App to install a local development server through Webpack. For the same reason, all the React components are kept in a single jsx file.
-
-However, I did install Babel locally and configured it to automatically transpile the JSX to JS each time I save the file in Atom.
+I orginally built this React-based app using CDNs script tags and a single jsx file for later copy over to CodePen (so I could submit to freeCodeCamp). However, I wanted to have a go at using Create-React-App to set a local dev server through Webpack. I also wanted to modularize my code into separate js files.
 
 ## Parsing the Markdown text
 

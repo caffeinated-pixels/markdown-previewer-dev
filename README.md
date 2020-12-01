@@ -4,7 +4,7 @@ A React-based app for the [Build a Markdown Previewer](https://www.freecodecamp.
 
 ## Set up
 
-I orginally built this React-based app using CDNs script tags and a single jsx file for later copy over to CodePen (so I could submit to freeCodeCamp). However, I wanted to have a go at using Create-React-App to set a local dev server through Webpack. I also wanted to modularize my code into separate js files.
+I [orginally built this React-based app](https://github.com/caffeinated-pixels/markdown-previewer) using CDNs script tags and a single jsx file for later copy over to CodePen (so I could submit to freeCodeCamp). However, I wanted to have a go at using Create-React-App to set a local dev server through Webpack. I also wanted to modularize my code into separate js files.
 
 ## Parsing the Markdown text
 

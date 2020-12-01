@@ -1,5 +1,7 @@
 import React from 'react'
 import defaultText from './default-text'
+import Editor from './Editor'
+import Preview from './Preview'
 import marked from 'marked'
 import DOMPurify from 'dompurify'
 
@@ -44,33 +46,6 @@ class Input extends React.Component {
       </div>
     )
   }
-}
-
-function Editor(props) {
-  return (
-    <div className="flexitem">
-      <div className="bar">
-        <p>Input window</p>
-      </div>
-      <textarea
-        id="editor"
-        value={props.rawText}
-        spellCheck="false"
-        onChange={props.handleChange}
-      />
-    </div>
-  )
-}
-
-function Preview(props) {
-  return (
-    <div className="flexitem">
-      <div className="bar">
-        <p>Preview window</p>
-      </div>
-      <div id="preview" dangerouslySetInnerHTML={props.getMarkdown}></div>
-    </div>
-  )
 }
 
 export default Input

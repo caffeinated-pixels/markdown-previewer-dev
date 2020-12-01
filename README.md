@@ -1,4 +1,4 @@
-# Markdown Previewer
+# Markdown Previewer (dev server version)
 
 A React-based app for the [Build a Markdown Previewer](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) freeCodeCamp challenge.
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import defaultText from './default-text'
 import Editor from './Editor'
 import Preview from './Preview'
@@ -11,19 +11,12 @@ marked.setOptions({
   headerIds: false // disables auto header ids
 })
 
-class Input extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      rawText: defaultText
-    }
-    this.handleChange = this.handleChange.bind(this)
-    this.getMarkdown = this.getMarkdown.bind(this)
-  }
+function Input() {
+  const [rawText, setState] = useState(defaultText)
 
-  getMarkdown() {
+  const getMarkdown = () => {
     // parse markdown text using Marked library
-    const htmlMarkup = marked(this.state.rawText)
+    const htmlMarkup = marked(rawText)
 
     // clean up HTML to mitigate XSS risk
     const cleanMarkup = DOMPurify.sanitize(htmlMarkup)
@@ -32,20 +25,16 @@ class Input extends React.Component {
     return { __html: cleanMarkup }
   }
 
-  handleChange(event) {
-    this.setState({
-      rawText: event.target.value
-    })
+  const handleChange = event => {
+    setState(event.target.value)
   }
 
-  render() {
-    return (
-      <div className="container">
-        <Editor handleChange={this.handleChange} rawText={this.state.rawText} />
-        <Preview getMarkdown={this.getMarkdown()} />
-      </div>
-    )
-  }
+  return (
+    <div className="container">
+      <Editor handleChange={handleChange} rawText={rawText} />
+      <Preview getMarkdown={getMarkdown()} />
+    </div>
+  )
 }
 
 export default Input

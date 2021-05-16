@@ -60,14 +60,14 @@ header {
   border-bottom-width: 0;
   border-radius: 15px 15px 0 0;
   box-shadow: 2px 2px 4px grey;
-  color: white;
-  font-weight: 600;
+  color: black;
+  font-weight: 700;
   padding: 5px;
 }
 
 .bar p {
   padding-left: 10px;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 1px #404040;
 }
 
 #editor,

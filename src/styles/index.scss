@@ -77,12 +77,12 @@ header {
     radius: 15px 15px 0 0;
   }
   box-shadow: $box-shadow;
-  color: white;
-  font-weight: 600;
+  color: black;
+  font-weight: 700;
   padding: 5px;
   p {
     padding-left: 10px;
-    @include text-shadow();
+    @include text-shadow(1px, 1px, 1px, #404040);
   }
 }
 

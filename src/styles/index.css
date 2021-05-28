@@ -101,6 +101,7 @@ footer {
 
 /***PREVIEW BOX TEXT STYLING***/
 code, pre {
+  white-space: pre-wrap;
   background-color: #35373a;
   padding: 0 0.1em;
 }
@@ -125,43 +126,43 @@ blockquote p {
   margin-left: 10px;
 }
 
-#preview {
+.preview {
   overflow-wrap: break-word;
   /* forces long words to wrap */
 }
 
-#preview p {
+.preview p {
   margin-top: 0.7em;
   margin-bottom: 0.7em;
 }
 
-#preview h1 {
+.preview h1 {
   margin: 0.25em 0;
   padding-bottom: 0.2em;
   border-bottom: 2px solid #fff;
 }
 
-#preview h2 {
+.preview h2 {
   margin-top: 0.83em;
   margin-bottom: 0.83em;
 }
 
-#preview h3 {
+.preview h3 {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-#preview h4 {
+.preview h4 {
   margin-top: 1.33em;
   margin-bottom: 1.33em;
 }
 
-#preview h5 {
+.preview h5 {
   margin-top: 1.67em;
   margin-bottom: 1.67em;
 }
 
-#preview h6 {
+.preview h6 {
   margin-top: 2.33em;
   margin-bottom: 2.33em;
 }
@@ -200,7 +201,7 @@ th {
   textarea {
     font-size: 0.78571rem;
   }
-  #preview h1 {
+  .preview h1 {
     font-size: 1.71429rem;
   }
   footer {

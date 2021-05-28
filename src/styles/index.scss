@@ -1,7 +1,12 @@
 // SCSS VARIABLES
 $box-shadow: 2px 2px 4px grey;
-$text-background: #f0fbdb;
-$border-default: 1px solid black;
+$body-background: #35373a;
+$text-background: #3b3d41;
+$bar-background: #ee7d3c;
+$code-background: #35373a;
+$text-color: #fff;
+$link-color: #ff9555;
+$border-default: 1px solid $bar-background;
 
 // SCSS FUNCTIONS
 @function calculateRem($size, $base: 16px) {
@@ -23,10 +28,11 @@ $border-default: 1px solid black;
 
 body {
   font-family: 'Quicksand', sans-serif;
+  color: $text-color;
 }
 
 a {
-  color: #3399ff;
+  color: $link-color;
   font-weight: 600;
   text-decoration: none;
   &:hover,
@@ -41,7 +47,7 @@ a {
 
 /***MAIN STRUCTURE STYLING***/
 .outer {
-  background-color: #fff4fb;
+  background-color: $body-background;
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -49,7 +55,7 @@ a {
 
 header {
   font-size: calculateRem(24px);
-  @include text-shadow();
+  // @include text-shadow();
 }
 
 .container {
@@ -71,32 +77,38 @@ header {
 }
 
 .bar {
-  background-color: #f7c3c0;
+  background-color: $bar-background;
   border: $border-default {
     bottom-width: 0;
     radius: 15px 15px 0 0;
   }
-  box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
   color: black;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: 5px;
   p {
     padding-left: 10px;
-    @include text-shadow(1px, 1px, 1px, #404040);
+    // @include text-shadow(1px, 1px, 1px, #404040);
   }
 }
 
-#editor,
-#preview {
+.editor,
+.preview {
   background-color: $text-background;
-  box-shadow: $box-shadow;
-  border: $border-default {
-    radius: 0 0 15px 15px;
-  }
+  color: $text-color;
+  // box-shadow: $box-shadow;
+  border: 1px solid $bar-background;
   height: 100%;
   overflow: auto; /* enables scrollbar */
   padding: 10px;
   resize: none; /* prevents resizing of textarea box */
+}
+
+.editor:focus-within,
+.preview:focus-within {
+  outline: none;
+  border-color: white;
 }
 
 footer {
@@ -112,7 +124,7 @@ footer {
 
 /***PREVIEW BOX TEXT STYLING***/
 code {
-  background-color: #e8e8e8;
+  background-color: $code-background;
   padding: 0 0.1em;
 }
 
@@ -129,7 +141,7 @@ ul {
 
 blockquote {
   margin: 1em 40px;
-  border-left: 2px solid red;
+  border-left: 2px solid $bar-background;
   p {
     margin-left: 10px;
   }
@@ -142,9 +154,9 @@ blockquote {
     margin-bottom: 0.7em;
   }
   h1 {
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    border-bottom: 1px solid black;
+    margin: 0.25em 0;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid $text-color;
   }
   h2 {
     margin-top: 0.83em;

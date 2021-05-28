@@ -6,7 +6,11 @@ function Preview(props) {
       <div className="bar">
         <p>Preview window</p>
       </div>
-      <div id="preview" dangerouslySetInnerHTML={props.getMarkdown}></div>
+      <div
+        id="preview"
+        className="preview"
+        dangerouslySetInnerHTML={props.getMarkdown}
+      ></div>
     </div>
   )
 }

@@ -8,6 +8,7 @@ function Editor(props) {
       </div>
       <textarea
         id="editor"
+        className="editor"
         value={props.rawText}
         spellCheck="false"
         onChange={props.handleChange}

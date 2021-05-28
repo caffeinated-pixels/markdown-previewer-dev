@@ -20,6 +20,10 @@ a:hover, a:focus {
   color: #b45922;
 }
 
+img {
+  max-width: 100%;
+}
+
 .text-center {
   text-align: center;
 }

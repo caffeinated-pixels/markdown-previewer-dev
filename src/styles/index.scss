@@ -64,8 +64,10 @@ header {
 
 .container {
   display: flex;
+  margin: 0 auto;
   height: calc(100vh - (60px + 56px)); /* minus header + footer */
   width: 100%;
+  max-width: 1600px;
   padding: 5px 5px;
 }
 

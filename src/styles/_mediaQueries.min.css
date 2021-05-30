@@ -1,1 +1,0 @@
-@media (max-width: 700px){html{font-size:calculateRem(14px)}header{font-size:calculateRem(12px, 14px);padding-top:5px;padding-bottom:5px}.container{flex-direction:column;height:calc(100vh - (40px + 38px))}.flexitem{max-width:100%;max-height:50%}textarea{font-size:calculateRem(11px, 14px)}.preview h1{font-size:calculateRem(24px, 14px)}footer{font-size:calculateRem(11px, 14px)}}

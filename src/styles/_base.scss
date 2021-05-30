@@ -66,8 +66,10 @@ footer {
     size: calculateRem(18px);
     weight: 600;
   }
-  padding: {
-    bottom: 5px;
-    top: 5px;
-  }
+
+  margin-bottom: 0.5em;
+  // padding: {
+  //   bottom: 0.3em;
+  //   top: 5px;
+  // }
 }

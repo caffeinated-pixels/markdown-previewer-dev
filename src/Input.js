@@ -30,7 +30,7 @@ function Input() {
   }
 
   return (
-    <div className="container">
+    <div className="windows-container">
       <Editor handleChange={handleChange} rawText={rawText} />
       <Preview getMarkdown={getMarkdown()} />
     </div>

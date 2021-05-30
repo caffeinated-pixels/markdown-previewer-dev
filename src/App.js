@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 function App() {
   return (
-    <div className="outer">
+    <div className="main-container">
       <Header />
       <Input />
       <Footer />

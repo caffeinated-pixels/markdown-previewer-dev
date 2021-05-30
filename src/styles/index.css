@@ -57,7 +57,7 @@ header {
   height: 100%;
   max-width: 50%;
   /* keeps input & previewer same width */
-  padding: 5px;
+  padding: 0.5em;
 }
 
 .bar {
@@ -83,7 +83,7 @@ header {
   height: 100%;
   overflow: auto;
   /* enables scrollbar */
-  padding: 10px;
+  padding: 1em;
   resize: none;
   /* prevents resizing of textarea box */
 }

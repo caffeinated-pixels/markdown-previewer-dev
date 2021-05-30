@@ -1,0 +1,63 @@
+// main: ./main.scss
+
+.outer {
+  background-color: $body-background;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  height: calc(100vh - (60px + 56px)); /* minus header + footer */
+  width: 100%;
+  max-width: 1600px;
+  padding: 5px 5px;
+}
+
+.flexitem {
+  display: flex;
+  flex: {
+    flow: column;
+    basis: 50%;
+  }
+  height: 100%;
+  max-width: 50%; /* keeps input & previewer same width */
+  padding: 0.5em;
+}
+
+.bar {
+  background-color: $bar-background;
+  border: $border-default {
+    bottom-width: 0;
+    radius: 15px 15px 0 0;
+  }
+  // box-shadow: $box-shadow;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 5px;
+  p {
+    padding-left: 10px;
+    // @include text-shadow(1px, 1px, 1px, #404040);
+  }
+}
+
+.editor,
+.preview {
+  background-color: $text-background;
+  color: $text-color;
+  // box-shadow: $box-shadow;
+  border: 1px solid $bar-background;
+  height: 100%;
+  overflow: auto; /* enables scrollbar */
+  padding: 1em;
+  resize: none; /* prevents resizing of textarea box */
+}
+
+.editor:focus-within,
+.preview:focus-within {
+  outline: none;
+  border-color: white;
+}

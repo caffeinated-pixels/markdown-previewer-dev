@@ -13,12 +13,6 @@ $bar-text-color: #000;
 $link-color: #ff9555;
 $border-default: 1px solid $bar-background;
 
-// SCSS FUNCTIONS
-// @function calculateRem($size, $base: 16px) {
-//   $remSize: ($size / $base);
-//   @return #{$remSize}rem;
-// }
-
 // SCSS MIXINS
 @mixin text-shadow($x: 1px, $y: 1px, $blur: 2px, $color: black) {
   text-shadow: $x $y $blur $color;

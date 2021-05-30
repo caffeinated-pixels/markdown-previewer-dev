@@ -146,14 +146,14 @@ code, pre {
   padding: 0 0.1em;
 }
 
-/* pre wraps code elements to create a codeblock */
 pre {
+  /* pre wraps code elements to create a codeblock */
   margin: 1em 0;
   padding: 0.7em;
 }
 
 ul {
-  padding-left: 30px;
+  padding-left: 1.875em;
   /* reapply margin to li elements */
 }
 
@@ -163,7 +163,7 @@ blockquote {
 }
 
 blockquote p {
-  margin-left: 10px;
+  margin-left: 0.625em;
 }
 
 .preview {

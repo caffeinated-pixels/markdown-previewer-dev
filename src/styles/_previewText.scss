@@ -35,6 +35,10 @@ blockquote {
     margin: 0.25em 0;
     padding-bottom: 0.2em;
     border-bottom: 2px solid $text-color;
+
+    @include mq(700px) {
+      font-size: 1.7rem;
+    }
   }
   h2 {
     margin-top: 0.83em;

@@ -6,15 +6,18 @@ $body-background: #35373a;
 $text-background: #3b3d41;
 $bar-background: #ee7d3c;
 $code-background: #35373a;
+
 $text-color: #fff;
+$bar-text-color: #000;
+
 $link-color: #ff9555;
 $border-default: 1px solid $bar-background;
 
 // SCSS FUNCTIONS
-@function calculateRem($size, $base: 16px) {
-  $remSize: ($size / $base);
-  @return #{$remSize}rem;
-}
+// @function calculateRem($size, $base: 16px) {
+//   $remSize: ($size / $base);
+//   @return #{$remSize}rem;
+// }
 
 // SCSS MIXINS
 @mixin text-shadow($x: 1px, $y: 1px, $blur: 2px, $color: black) {
@@ -34,9 +37,21 @@ $border-default: 1px solid $bar-background;
   padding: 0;
 }
 
+html {
+  @include mq(700px) {
+    font-size: 87.5%;
+  }
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   color: $text-color;
+}
+
+textarea {
+  @include mq(700px) {
+    font-size: 0.8rem;
+  }
 }
 
 a {
@@ -58,18 +73,22 @@ img {
 }
 
 header {
-  font-size: calculateRem(24px);
+  font-size: 1.5rem;
+
+  @include mq(700px) {
+    font-size: 1rem;
+  }
 }
 
 footer {
   font: {
-    size: calculateRem(18px);
+    size: 1.125rem;
     weight: 600;
   }
 
   margin-bottom: 0.5em;
-  // padding: {
-  //   bottom: 0.3em;
-  //   top: 5px;
-  // }
+
+  @include mq(700px) {
+    font-size: 0.8rem;
+  }
 }

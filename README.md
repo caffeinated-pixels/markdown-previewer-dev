@@ -14,7 +14,7 @@ I definitely now know a lot more about formatting markdown, which is handy for w
 
 This was my first-ever ReactJS app, which was exciting! I [orginally built the app](https://github.com/caffeinated-pixels/markdown-previewer) using a single JS file and CDNs script tags to import the React library. I figured this would make it easier to copy my app over from my dev environment (i.e. Atom and Git) to CodePen for submitting to freeCodeCamp.
 
-However, I wanted to have a go at using the Create-React-App to set a local Webpack-based dev server. I also wanted to modularize my components into separate JS files, which helps improve readability and I believe is a good habit to get into.
+However, I wanted to have a go at using the **Create-React-App** to set a local Webpack-based dev server. I also wanted to modularize my components into separate JS files, which helps improve readability and I believe is a good habit to get into.
 
 ## Design philosophy
 

@@ -3,7 +3,7 @@ import React from 'react'
 function Editor(props) {
   return (
     <div className="flexitem">
-      <div className="bar">
+      <div className="bar" tabIndex="0">
         <p>Input window</p>
       </div>
       <textarea

@@ -4,12 +4,13 @@ function Preview(props) {
   return (
     <div className="flexitem">
       <div className="bar">
-        <p>Preview window</p>
+        <p tabIndex="0">Preview window</p>
       </div>
       <div
         id="preview"
         className="preview"
         dangerouslySetInnerHTML={props.getMarkdown}
+        tabIndex="0"
       ></div>
     </div>
   )

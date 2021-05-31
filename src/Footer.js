@@ -4,7 +4,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
   return (
-    <footer className="text-center">
+    <footer className="text-center" tabIndex="0">
       <p>
         Coded by&nbsp;
         <a

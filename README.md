@@ -6,7 +6,7 @@ You can see my [Markdown Previewer app](https://markup-my-markdown.netlify.app/)
 
 This is a ReactJS-based app I made for the [Build a Markdown Previewer](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) freeCodeCamp project, which is part of the Front End Development Libraries certification.
 
-My app takes a text input and formats Github-flavoured Markdown syntax to produce a real-time preview in a separate display element.
+My app takes a plain text input and converts it to formatted HTML based on any [Github-flavoured Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax the user includes. It does this in real-time and displays the result in a live preview box.
 
 The project brief specifies that when the app first loads, the `<textarea>` input should contain valid Markdown examples for a variety of different elements, such as a header, subheader, link, code block, image, etc. Hence, all the placeholder text!
 

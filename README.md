@@ -1,5 +1,7 @@
 # Markdown Previewer (dev server version)
 
+You can see my [Markdown Previewer app](https://markup-my-markdown.netlify.app/) in action here. I also wrote a [dev blog about it on Hashnode](https://caffeinated-coder.hashnode.dev/how-i-built-a-markdown-previewer-with-react).
+
 ## What is it?
 
 This is a ReactJS-based app I made for the [Build a Markdown Previewer](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer) freeCodeCamp project, which is part of the Front End Development Libraries certification.

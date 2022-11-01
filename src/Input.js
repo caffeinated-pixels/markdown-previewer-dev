@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import defaultText from './default-text'
 import Editor from './Editor'
 import Preview from './Preview'
-import marked from 'marked'
+import { marked } from 'marked'
 import DOMPurify from 'dompurify'
 
 // set options for Marked
 marked.setOptions({
   breaks: true, // adds <br> on single line breaks
-  headerIds: false // disables auto header ids
+  headerIds: false, // disables auto header ids
 })
 
 function Input() {
@@ -25,7 +25,7 @@ function Input() {
     return { __html: cleanMarkup }
   }
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setState(event.target.value)
   }
 
